@@ -1,9 +1,9 @@
 # EXPERIMENT-NO--03-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resistor
 
-# DATE :
-# NAME :
-# ROLLNUMBER :
-# DEPARTMENT
+# DATE :1/03/2024
+# NAME :SRIRAJ G
+# ROLLNUMBER :212222040161
+# DEPARTMENT :COMPUTER SCIENCE AND ENGINEERING.
 ## AIM: 
 To interface an FSR(force sensitive resistor) and scale the output voltage obtained to pressure applied 
  
@@ -62,6 +62,9 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 ### FIGURE-03 CIRCUIT DIAGRAM
+![Circuit 3 ](https://github.com/SRIRAJGURUNATHAN/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/119476758/05f96f40-2c12-4c0b-8e6a-2aed7d270b2a)
+SCHEMATIC VIEW:
+![Screenshot 2024-03-01 204613](https://github.com/SRIRAJGURUNATHAN/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/119476758/415a9bf9-b156-4d85-a673-3878e0e0638c)
 
 
 
@@ -79,9 +82,31 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 ### PROGRAM 
- *your roll no 
- * your name 
- * department and year 
+int LED=7;
+int FSR;
+void setup()
+{
+  pinMode(LED,OUTPUT);
+  Serial.begin(9600);
+}
+void loop()
+{
+  FSR =analogRead(A0);
+  Serial.print("Raw value=");
+  Serial.println(FSR);
+  delay(500);
+  int m;
+  m=map(FSR,0,159,0,10);
+  Serial.print("mapped value=");
+  Serial.print(m);
+  if(FSR>50)
+  {
+    digitalWrite(LED,LOW);
+    delay(500);
+    digitalWrite(LED,HIGH);
+    delay(500);
+  }
+}
  
  
  
@@ -98,7 +123,8 @@ The easiest way to measure a resistive sensor is to connect one end to power and
  
  
 
-![image](https://user-images.githubusercontent.com/36288975/188804653-a3154e8e-2655-46f2-9dcd-f425dd1ba109.png)
+
+![excel 3](https://github.com/SRIRAJGURUNATHAN/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/119476758/970caa06-d0bb-491f-905f-0eaae51c2d74)
 
 
 ### TABLE -02 standard deviation table 
