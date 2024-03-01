@@ -62,7 +62,7 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 ### FIGURE-03 CIRCUIT DIAGRAM
-![Circuit 3 ](https://github.com/SRIRAJGURUNATHAN/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/119476758/05f96f40-2c12-4c0b-8e6a-2aed7d270b2a)
+![Screenshot 2024-03-01 205323](https://github.com/SRIRAJGURUNATHAN/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/119476758/8020a427-d930-49c7-ab88-cc5e38652e53)
 SCHEMATIC VIEW:
 ![Screenshot 2024-03-01 204613](https://github.com/SRIRAJGURUNATHAN/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/119476758/415a9bf9-b156-4d85-a673-3878e0e0638c)
 
@@ -122,8 +122,8 @@ void loop()
  
  
  
+![excel 3](https://github.com/SRIRAJGURUNATHAN/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/119476758/eae077b9-ab91-4b6a-a04d-c0b23932c176)
 
-![Screenshot 2024-03-01 205323](https://github.com/SRIRAJGURUNATHAN/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/119476758/8020a427-d930-49c7-ab88-cc5e38652e53)
 GRAPH:
 
 ![Screenshot 2024-03-01 163753](https://github.com/SRIRAJGURUNATHAN/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/119476758/cd2d7abe-7f06-4aa9-9184-e1b849cbeb45)
@@ -143,9 +143,9 @@ N is the total number of values
 
 For those unfamiliar with summation notation, the equation above may seem daunting, but when addressed through its individual components, this summation is not particularly complicated. The i=1 in the summation indicates the starting index, i.e. for the data set 1, 3, 4, 7, 8, i=1 would be 1, i=2 would be 3, and so on. Hence the summation notation simply means to perform the operation of (xi - μ)2 on each value through N, which in this case is 5 since there are 5 values in this data set.
 
-EX:           μ = (1+3+4+7+8) / 5 = 4.6        
-σ = √[(1 - 4.6)2 + (3 - 4.6)2 + ... + (8 - 4.6)2)]/5
-σ = √(12.96 + 2.56 + 0.36 + 5.76 + 11.56)/5 = 2.577
+EX:           μ = (1.11+2.19+3.43+4.16+5.23) / 5 = 1.612      
+σ = √[(1.11 - 1.612)2 + (2.19 - 1.612)2 + ... + (5.23 - 1.612)2)]/5
+σ = √(0.150544+9+16+25+36)/5 = 0.928173173
 
 
 
