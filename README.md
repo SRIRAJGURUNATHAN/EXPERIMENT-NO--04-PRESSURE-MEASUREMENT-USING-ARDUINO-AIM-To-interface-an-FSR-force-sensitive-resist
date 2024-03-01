@@ -125,6 +125,7 @@ void loop()
 
 ![Screenshot 2024-03-01 205323](https://github.com/SRIRAJGURUNATHAN/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/119476758/8020a427-d930-49c7-ab88-cc5e38652e53)
 GRAPH:
+
 ![Screenshot 2024-03-01 163753](https://github.com/SRIRAJGURUNATHAN/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/119476758/cd2d7abe-7f06-4aa9-9184-e1b849cbeb45)
 
 
