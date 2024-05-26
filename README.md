@@ -82,6 +82,7 @@ SCHEMATIC VIEW:
 
 
 ### PROGRAM 
+```
 int LED=7;
 int FSR;
 void setup()
@@ -107,7 +108,7 @@ void loop()
     delay(500);
   }
 }
- 
+```
  
  
  
